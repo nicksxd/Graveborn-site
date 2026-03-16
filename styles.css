@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Heartless';
+    src: url('fonts/Heartless.ttf') format('truetype');
+}
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Corpo */
+body{
+font-family:Arial, sans-serif;
+background:#0f0f0f;
+color:#ddd;
+line-height:1.6;
+}
+
+/* MENU FIXO */
+.menu{
+background:#111;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.menu ul{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+.menu ul li a{
+color:#fff;
+text-decoration:none;
+font-size:1.1em;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.menu ul li a:hover{
+color:#ffcc00;
+}
+
+/* HERO (nova seção principal) */
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url("imagem1.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+/* Título do jogo */
+.hero h1{
+font-family:'Heartless',Arial,sans-serif;
+font-size:7em;
+letter-spacing:15px;
+
+-webkit-text-stroke:1px black;
+
+text-shadow:
+0 0 10px black,
+0 0 20px black,
+0 0 30px black;
+}
+
+/* Frase do jogo */
+.hero p{
+margin-top:20px;
+font-size:1.5em;
+color:#ccc;
+}
+
+/* Botão */
+.hero button{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:8px;
+background:#ffcc00;
+color:black;
+font-weight:bold;
+font-size:1em;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+}
+
+/* CONTEÚDO */
+.content{
+max-width:1100px;
+margin:80px auto;
+padding:40px;
+background:#1a1a1a;
+border-radius:10px;
+text-align:center;
+}
+
+.content h2{
+font-size:2.5em;
+margin-bottom:20px;
+color:#fff;
+}
+
+.bloco{
+margin-bottom:70px;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+.particles{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.particles span{
+position:absolute;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+opacity:0.4;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+50%{
+opacity:0.5;
+}
+
+100%{
+transform:translateY(-10vh);
+opacity:0;
+}
+}
+
+/* PARALLAX 1 - REINO ANTIGO */
+.parallax1{
+height:500px;
+
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+url("reino1.jpg");
+
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.parallax1 h2{
+font-size:3em;
+color:#fff;
+text-shadow:0 0 15px black;
+}
+/* PARALLAX 2 - BIBLIOTECA */
+.parallax2{
+height:500px;
+
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+url("biblioteca1.jpg");
+
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.parallax2 h2{
+font-size:3em;
+color:#fff;
+text-shadow:0 0 15px black;
+}
